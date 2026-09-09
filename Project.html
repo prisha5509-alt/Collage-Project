@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Client-Server File Portal</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0056b3;
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .network-box {
+            background-color: #e9ecef;
+            padding: 15px;
+            border-left: 5px solid #28a745;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+        .network-box h3 {
+            margin-top: 0;
+            color: #212529;
+        }
+        .file-list {
+            list-style: none;
+            padding: 0;
+        }
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .file-name {
+            font-weight: bold;
+            color: #495057;
+        }
+        .download-btn {
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: background 0.2s ease;
+        }
+        .download-btn:hover {
+            background-color: #218838;
+        }
+        footer {
+            margin-top: 40px;
+            border-top: 1px dashed #ccc;
+            padding-top: 20px;
+        }
+        .team-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .team-table th {
+            background-color: #f1f3f5;
+            border-bottom: 2px solid #dee2e6;
+            padding: 10px;
+            text-align: left;
+            color: #495057;
+        }
+        .team-table td {
+            padding: 10px;
+            border-bottom: 1px solid #dee2e6;
+            text-align: left;
+        }
+        .project-title-footer {
+            margin-top: 25px;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Header Section -->
+    <h1>🌐 Local Client-Server Resource Portal</h1>
+    
+    <!-- Technical Specifications Panel (For the Examiner) -->
+    <div class="network-box">
+        <h3>📊 Network Micro-Project Specifications:</h3>
+        <p><strong>Application Layer Protocol:</strong> HTTP (Hypertext Transfer Protocol)</p>
+        <p><strong>Architecture Model:</strong> Client-Server Architecture</p>
+        <p><strong>Current Node Status:</strong> Acting as Local Web Host Server</p>
+    </div>
+
+    <!-- Main Content Area -->
+    <h2>Shared Study Materials & Resources</h2>
+    <p>Click any link below to request and download the file from the server host via HTTP GET request:</p>
+
+    <ul class="file-list">
+        <!-- These files should sit in your folder so they don't give a 404 error -->
+        <li class="file-item">
+            <span class="file-name">Practical 1</span>
+            <a href="PRACTICAL 1.pdf" class="download-btn" download>Download</a>
+        </li>
+
+        <li class="file-item">
+            <span class="file-name">Practical 2</span>
+            <a href="PRACTICAL 2.pdf" class="download-btn" download>Download</a>
+        </li>
+
+        <li class="file-item">
+            <span class="file-name">Practical 3</span>
+            <a href="PRACTICAL 3.pdf" class="download-btn" download>Download</a>
+        </li>
+
+        <li class="file-item">
+            <span class="file-name">Practical 4</span>
+            <a href="PRACTICAL 4.pdf" class="download-btn" download>Download</a>
+        </li>
+
+        <li class="file-item">
+            <span class="file-name">Practical 5</span>
+            <a href="PRACTICAL 5.pdf" class="download-btn" download>Download</a>
+        </li>
+
+        <li class="file-item">
+            <span class="file-name">Practical 6</span>
+            <a href="PRACTICAL 6.pdf" class="download-btn" download>Download</a>
+        </li>
+
+        <li class="file-item">
+            <span class="file-name">Practical 7</span>
+            <a href="PRACTICAL 7.pdf" class="download-btn" download>Download</a>
+        </li>
+
+        <li class="file-item">
+            <span class="file-name">Practical 8</span>
+            <a href="PRACTICAL 8.pdf" class="download-btn" download>Download</a>
+        </li>
+
+        <li class="file-item">
+            <span class="file-name">Practical 9</span>
+            <a href="PRACTICAL 9.pdf" class="download-btn" download>Download</a>
+        </li>
+    </ul>
+
+    <!-- Customized Team Footer Section -->
+    <footer>
+        <p style="font-weight: bold; color: #0056b3; margin-bottom: 5px; font-size: 16px;">👥 Project Developers (Group Members):</p>
+        <table class="team-table">
+            <thead>
+                <tr>
+                    <th>Sr. No.</th>
+                    <th>Name of Student</th>
+                    <th>Enrollment / Roll No.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td style="font-weight: 500;">Prisha</td>
+                    <td style="font-family: monospace; font-weight: bold;">39</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td style="font-weight: 500;">Dhanvi</td>
+                    <td style="font-family: monospace; font-weight: bold;">15</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td style="font-weight: 500;">Nitya</td>
+                    <td style="font-family: monospace; font-weight: bold;">64</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td style="font-weight: 500;">Shreshta</td>
+                    <td style="font-family: monospace; font-weight: bold;">54</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p class="project-title-footer">
+            <strong>DIPLOMA SEMESTER 3: COMPUTER NETWORKS MICRO-PROJECT</strong>
+        </p>
+    </footer>
+</div>
+
+</body>
+</html>
